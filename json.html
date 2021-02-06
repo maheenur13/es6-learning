@@ -13,12 +13,19 @@
         const user = {
             name:"Mahee",
             age:24,
-            phone:"01730381915"
+            lover:{
+                name:"Anonna",
+                age:22
+            },
+            phone:"01730381915",
+            friendsname:["suzon","shohaib","ashik"],
+            friendsage:[21,25,22]
         };
         const userObjectToJson = JSON.stringify(user);
         console.log(userObjectToJson);
         const userJsonToObject = JSON.parse(userObjectToJson);
         console.log(userJsonToObject);
+        console.log(JSON.stringify(user.lover))
     </script>
 </body>
 </html>
